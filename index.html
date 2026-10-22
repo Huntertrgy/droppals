@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drop Pals: Fluffy Tube Run</title>
+<meta name="description" content="Steer a fluffy pal down wild machine tubes and collect 83 cute pals. Coming soon to Google Play.">
+<meta property="og:title" content="Drop Pals: Fluffy Tube Run">
+<meta property="og:description" content="Steer a fluffy pal down wild machine tubes and collect 83 cute pals. Coming soon to Google Play.">
+<meta property="og:image" content="img/feature.png">
+<link rel="icon" href="img/icon.png">
+<style>
+:root{--bg:#1b1240;--bg2:#2a1b66;--card:#ffffff14;--ink:#fff;--mut:#cfc6ff;--pink:#ff5fa2;--gold:#ffd23f;--mint:#3ff0d0}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Fredoka","Segoe UI",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 50% -10%,#5a3fd6 0,var(--bg2) 38%,var(--bg) 100%);min-height:100vh;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:20px 16px 56px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.top img{height:44px}
+.lang{display:flex;gap:6px}
+.lang button{background:var(--card);border:2px solid transparent;color:var(--ink);padding:6px 14px;border-radius:999px;font:inherit;cursor:pointer}
+.lang button[aria-pressed=true]{border-color:var(--gold)}
+.hero{text-align:center;padding:36px 0 18px}
+.hero img.icon{width:132px;height:132px;border-radius:28px;box-shadow:0 10px 0 #0003,0 0 0 4px #ffffff26}
+h1{font-size:clamp(34px,7vw,58px);line-height:1.08;margin:18px 0 8px;text-shadow:0 5px 0 #0006}
+.lead{color:var(--mut);font-size:clamp(17px,3vw,21px);max-width:620px;margin:0 auto 22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:8px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;font-size:19px;text-decoration:none;box-shadow:0 6px 0 #0004}
+.btn.soon{background:#ffffff1f;color:#fff;border:2px dashed #ffffff66;box-shadow:none;cursor:default}
+.btn.play{background:var(--mint);color:#142;display:none}
+.btn.yt{background:var(--pink);color:#fff}
+.note{color:var(--mut);font-size:14px}
+.feature{margin:26px auto 8px;border-radius:22px;overflow:hidden;box-shadow:0 14px 0 #0003;max-width:860px}
+.feature img{display:block;width:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:30px 0}
+.card{background:var(--card);border-radius:20px;padding:18px}
+.card h3{font-size:20px;margin-bottom:4px;color:var(--gold)}
+.card p{color:var(--mut);font-size:16px}
+.shots{display:flex;gap:12px;overflow-x:auto;padding:6px 2px 14px;scroll-snap-type:x mandatory}
+.shots img{height:420px;border-radius:16px;scroll-snap-align:start;box-shadow:0 6px 0 #0003}
+h2{text-align:center;font-size:28px;margin:34px 0 10px}
+footer{margin-top:38px;text-align:center;color:var(--mut);font-size:14px}
+footer a{color:var(--mut)}
+.tr{display:none}
+html[lang=tr] .tr{display:revert}html[lang=tr] .en{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <img src="img/logo.png" alt="Drop Pals">
+    <div class="lang"><button id="b-en" aria-pressed="true">EN</button><button id="b-tr" aria-pressed="false">TR</button></div>
+  </div>
+
+  <section class="hero">
+    <img class="icon" src="img/icon.png" alt="Drop Pals app icon">
+    <h1>Drop Pals: <span class="en">Fluffy Tube Run</span><span class="tr">Tüylü Tüp Koşusu</span></h1>
+    <p class="lead en">Swipe to steer a fluffy pal down wild machine tubes, dodge the obstacles and collect 83 cute pals. Free to play.</p>
+    <p class="lead tr">Tüylü bir pal'ı kaydırarak vahşi makine tüplerinde yönlendir, engellerden kaç ve 83 sevimli pal topla. Ücretsiz oyna.</p>
+    <div class="cta">
+      <!-- When the game is live: set the href below to the Google Play listing URL, remove class "soon" and the data-soon text, and un-hide it (see README note in the repo). -->
+      <a id="play" class="btn soon" aria-disabled="true"><span class="en">Coming soon to Google Play</span><span class="tr">Çok yakında Google Play'de</span></a>
+      <a class="btn yt" href="https://www.youtube.com/@DropPals?sub_confirmation=1" rel="noopener"><span class="en">Subscribe for launch day</span><span class="tr">Çıkış günü için abone ol</span></a>
+    </div>
+    <p class="note en">Android. Contains ads and optional in-app purchases.</p>
+    <p class="note tr">Android. Reklam ve isteğe bağlı uygulama içi satın alma içerir.</p>
+  </section>
+
+  <div class="feature"><img src="img/feature.png" alt="Drop Pals"></div>
+
+  <div class="grid">
+    <div class="card"><h3 class="en">One-thumb fun</h3><h3 class="tr">Tek başparmakla</h3><p class="en">Swipe anywhere on the lower screen. Easy to learn, hard to put down.</p><p class="tr">Ekranın alt kısmında her yerden kaydır. Öğrenmesi kolay, bırakması zor.</p></div>
+    <div class="card"><h3 class="en">83 fluffy pals</h3><h3 class="tr">83 tüylü pal</h3><p class="en">Four rarities, each pal with its own talent and a little story.</p><p class="tr">Dört nadirlik; her pal'ın kendi yeteneği ve kısa bir hikâyesi var.</p></div>
+    <div class="card"><h3 class="en">5 machine worlds</h3><h3 class="tr">5 makine dünyası</h3><p class="en">Slides, rockets, trampolines and rails along the way.</p><p class="tr">Yolda kaydıraklar, roketler, trambolinler ve raylar seni bekliyor.</p></div>
+    <div class="card"><h3 class="en">Outfits and more</h3><h3 class="tr">Kıyafetler ve dahası</h3><p class="en">Hats, scarves, wings, 50 flags, trails and home screen backdrops.</p><p class="tr">Şapkalar, atkılar, kanatlar, 50 bayrak, izler ve ana ekran arka planları.</p></div>
+  </div>
+
+  <h2 class="en">A peek inside</h2><h2 class="tr">İçeriden bir bakış</h2>
+  <div class="shots en">
+    <img src="img/en-01.jpg" alt="Screenshot 1" loading="lazy"><img src="img/en-03.jpg" alt="Screenshot 2" loading="lazy"><img src="img/en-05.jpg" alt="Screenshot 3" loading="lazy"><img src="img/en-07.jpg" alt="Screenshot 4" loading="lazy">
+  </div>
+  <div class="shots tr">
+    <img src="img/tr-01.jpg" alt="Ekran görüntüsü 1" loading="lazy"><img src="img/tr-03.jpg" alt="Ekran görüntüsü 2" loading="lazy"><img src="img/tr-05.jpg" alt="Ekran görüntüsü 3" loading="lazy"><img src="img/tr-07.jpg" alt="Ekran görüntüsü 4" loading="lazy">
+  </div>
+
+  <footer>
+    <p>© 2026 Conak Soft · <a href="https://huntertrgy.github.io/droppals-privacy/"><span class="en">Privacy Policy</span><span class="tr">Gizlilik Politikası</span></a> · <a href="mailto:conaksoft@gmail.com">conaksoft@gmail.com</a></p>
+    <p style="margin-top:6px"><span class="en">Google Play is a trademark of Google LLC.</span><span class="tr">Google Play, Google LLC'nin ticari markasıdır.</span></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var PLAY_URL=""; // paste the live Google Play listing URL here after release
+  var html=document.documentElement,en=document.getElementById('b-en'),tr=document.getElementById('b-tr');
+  function set(l){html.lang=l;en.setAttribute('aria-pressed',l==='en');tr.setAttribute('aria-pressed',l==='tr');try{localStorage.setItem('dp_lang',l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem('dp_lang')}catch(e){}
+  set(saved||((navigator.language||'en').toLowerCase().indexOf('tr')===0?'tr':'en'));
+  en.onclick=function(){set('en')};tr.onclick=function(){set('tr')};
+  if(PLAY_URL){var p=document.getElementById('play');p.href=PLAY_URL;p.className='btn play';p.style.display='inline-block';p.innerHTML='<span class="en">Get it on Google Play</span><span class="tr">Google Play\'den indir</span>'}
+})();
+</script>
+</body>
+</html>
